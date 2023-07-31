@@ -8,19 +8,29 @@
   </div>
 
   <div>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
+    <%= form.label :body, :class => 'form-label' %><br>
+    <%= form.text_area :body, :class => 'form-control' %><br>
     <% article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
 
   <div>
     <%= form.label :status %><br>
     <%= form.select :status, ["public", "private", "archived"], selected: "public" %> 
   </div>
+  <div class="mt-2">
+    <%= form.submit :class => 'btn btn-secondary' %>
+  </div>
+
+  <%# <div class="input-group">
+  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <button class="btn btn-outline-secondary" type="button">Button</button>
+</div> %>
 <% end %>
