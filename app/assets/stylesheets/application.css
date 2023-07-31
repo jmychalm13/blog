@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279122.jpg?w=1800&t=st=1690805896~exp=1690806496~hmac=a9a2e1fb4ead9b85163ea5cae0c86c847f5c750f08887f34ef36d7307266505e');
+  color: #FF72FF;
+}
+
+a:visited {
+  color: #FF72FF;
+  text-decoration: none;
+  cursor: pointer;
+}
