@@ -16,10 +16,21 @@
   </div>
 
 
-  <div>
-    <%= form.label :status %><br>
-    <%= form.select :status, ["public", "private", "archived"], selected: "public" %> 
+  <%# <div>
+    <%= form.label :status %>
+    <%# <%= form.select :status, ["public", "private", "archived"], selected: "public" %> 
+  <%# </div> %>
+  <div class="input-group mb-3">
+    <select name="article[status]" class="custom-select" id="inputGroupSelect02">
+      <option selected>Choose...</option>
+      <option value="public">Public</option>
+      <option value="private">Private</option>
+      <option value="archived">Archived</option>
+    </select>
+  <div class="input-group-append" style="border-radius: 0 8px 8px 0;">
+    <label class="input-group-text" for="inputGroupSelect02">Status</label>
   </div>
+</div>
   <div class="mt-2">
     <%= form.submit :class => 'btn btn-secondary' %>
   </div>

@@ -1,25 +1,21 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
 body {
-  background: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279122.jpg?w=1800&t=st=1690805896~exp=1690806496~hmac=a9a2e1fb4ead9b85163ea5cae0c86c847f5c750f08887f34ef36d7307266505e');
+  background: url('https://img.freepik.com/free-photo/abstract-gradient-neonlights_23-2149279122.jpg?w=1800&t=st=1690805896~exp=1690806496~hmac=a9a2e1fb4ead9b85163ea5cae0c86c847f5c750f08887f34ef36d7307266505e');
   color: #FF72FF;
+  font-family: 'Borel', cursive;
 }
 
 a:visited {
   color: #FF72FF;
   text-decoration: none;
   cursor: pointer;
+}
+
+.custom-select {
+  border-radius: 8px 0 0 8px;
+}
+
+.input-group-text {
+  border-radius: 0 8px 8px 0 !important;
 }
