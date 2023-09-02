@@ -1,13 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-  background: url('https://img.freepik.com/free-photo/abstract-gradient-neonlights_23-2149279122.jpg?w=1800&t=st=1690805896~exp=1690806496~hmac=a9a2e1fb4ead9b85163ea5cae0c86c847f5c750f08887f34ef36d7307266505e');
-  color: #FF72FF;
-  font-family: 'Borel', cursive;
+  color: #4c5270;
+  /* this is not what I want, why can't I get the fflux image to work - tried everything I could find */
+  background-image: linear-gradient(to top, #d16ba5, #b78cd5, #93abee, #7dc4f2, #8ad8ea, #8fe0e7, #99e7e3, #a6edde, #93eddd, #7deede, #61eede, #36eee0);
+  background-attachment: fixed;
+  font-family: 'Indie Flower', cursive;
+  height: 100vh;
+  width: 100vw;
+}
+
+body ul li {
+  padding: .5rem;
+  font-size: 1.25rem;
+}
+
+.nav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.nav a {
+  color: #f652a0;
+}
+
+.nav a:visited {
+  color: #f652a0;
+}
+
+a {
+  color: #4c5270;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #FF72FF;
+  color: #4c5270;
   text-decoration: none;
   cursor: pointer;
 }
@@ -18,4 +45,10 @@ a:visited {
 
 .input-group-text {
   border-radius: 0 8px 8px 0 !important;
+}
+
+.btn {
+  border-color: #4c5270;
+  background-color: #f652a0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
