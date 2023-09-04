@@ -3,8 +3,10 @@
 body {
   color: #4c5270;
   /* this is not what I want, why can't I get the fflux image to work - tried everything I could find */
-  background-image: linear-gradient(to top, #d16ba5, #b78cd5, #93abee, #7dc4f2, #8ad8ea, #8fe0e7, #99e7e3, #a6edde, #93eddd, #7deede, #61eede, #36eee0);
-  background-attachment: fixed;
+  /* background-image: linear-gradient(to top, #d16ba5, #b78cd5, #93abee, #7dc4f2, #8ad8ea, #8fe0e7, #99e7e3, #a6edde, #93eddd, #7deede, #61eede, #36eee0); */
+  background-image: url('ffflux.svg');
+  /* background-attachment: fixed; */
+  background-size: cover;
   font-family: 'Indie Flower', cursive;
   height: 100vh;
   width: 100vw;
